@@ -2447,7 +2447,7 @@ input[type="button"],
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	background-color: transparent;
 	border-radius: 0.35em;
-	border: solid 3px #A9ACEA;
+	border: solid 3px #30829F;
 	color: #787878 !important;
 	cursor: pointer;
 	display: inline-block;
@@ -2692,7 +2692,7 @@ input[type="button"],
 	}
 
 		#main > section {
-			border-top: solid 2px #A9ACEA;
+			border-top: solid 2px #30829F;
 			margin: 4em 0 0 0;
 			padding: 4em 0 0 0;
 		}
