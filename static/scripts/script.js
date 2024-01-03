@@ -1,4 +1,4 @@
-
+var landingDIV = document.getElementById('landing-div');
 var canvas = document.getElementById('landing-canvas');
 var ctx = canvas.getContext('2d');
 
@@ -11,7 +11,7 @@ while (i < 16){
     i++
 }
 
-canvas.addEventListener("mousemove", (event) =>{
+landingDIV.addEventListener("mousemove", (event) =>{
 
     canvas.width = canvas.clientWidth;
     canvas.height = canvas.clientHeight;
