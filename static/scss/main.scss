@@ -7,8 +7,14 @@ $_eggshellblue : #95A09B;
 $_eggshell : #E4E3D3;
 $_oldrose : #CC7178;
 
+@import '../fonts/fonts.css';
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    background-color: yellowgreen;
+    background-color: $_oldrose;
     min-height: 150vh;
     margin: 0%;
     padding: 0%;
@@ -47,18 +53,20 @@ body{
             left:10%;
             z-index: 1000;
             h1{
+                font-family: 'Advent_Pro';
+                font-weight: 800;
                 text-align: center;
                 background-color: (rgba(#111517, .8));
                 color: (rgba($_oldrose,.6));
                 width: 40%;
                 height: 50%;
-                padding: 0;
-                padding-top: 50px;
+                padding: 0%;
                 font-size: 60px;
                 margin: 0;
-                margin-bottom: 26px;
             }
             h2{
+                font-family: 'Inconsolata';
+                font-weight: 200;
                 transition-duration: .6s;
                 margin-top: 6px;
                 font-size: 36px;
@@ -84,48 +92,158 @@ body{
     }
 
     .nav-bar{
-        background-color: rgba($_darkblue, 1);
+        background-color: rgba(black, .7);
         width: 100%;
-        height: 40px;
+        height: 30px;
         position: sticky;
         margin: 0%;
         top: 0;
+        transition-duration: .3s;
+        color: $_eggshell;
+        &:hover{
+            color: rgba($_eggshell, .6);
+        }
         a{
             display: inline-block;
             margin: 0%;
             height: 100%;
             width: 100px;
-            color: $_eggshell;
+            color: inherit;
             padding: 0%;
             &.section-link{
+                text-transform: lowercase;
                 float: left;
+                text-decoration: none;
+                &:first-child{
+                    border-left: none;
+                }
             }
             &.outer-link{
+                text-transform: lowercase;
                 float: right;
+                text-decoration: none;
+                text-align: center;
             }
 
             &:hover{
-                background-image: linear-gradient(rgba(black, .4), rgba(black, .4));
+                color: $_eggshell
             }
 
             p{
+                font-family: 'Inconsolata';
+                font-weight: 100;
                 text-align: center;
                 margin: 0%;
+                margin-top: 7px;
                 height:100%;
                 width: 100%;
+            }
+            i{
+                padding-top: 7px;
+                height: 100%;
+                width: 100%;
+                margin: 0%;
+                margin-top: 7px;
+                text-align: center;
             }
         }
     }
     .content-body{
-        //background-image:   linear-gradient(rgba($_eggshell, .6), rgba($_oldrose, .6)),
-        //                    linear-gradient(115deg, rgba($_eggshell, 1), rgba($_oldrose, 1)),url(../assets/floor-tile.png); 
         background-image: linear-gradient(rgba($_darkblue, 1), rgba($_darkblue, 1));
         width: 100%;
         margin: 0%;
         section{
-            padding-top: 30px;
             min-height: 100vh;
+            max-height: 100vh;
+            height: 100vh;
             width: 100%;
+            display: grid;
+            $row_3: calc(90% - 3em);
+            grid-template-rows: 3em 2em $row_3;
+            grid-template-columns: 50% 25% 25%;
+            h1{
+                grid-row: 2;
+                grid-column: 1;
+                margin: 0%;
+                margin-left: 2em;
+                font-family: 'Inconsolata';
+                color: $_eggshell;
+            }
+            .text-box{
+                grid-row: 3;
+                grid-column-start: 1;
+                grid-column-end: span 3;
+                margin: auto 2.5%;
+                height: 80%;
+                width: auto;
+                background-color: rgba(white, .1);
+                border-left: .25em solid $_oldrose;
+                &-left{
+                    grid-row: 3;
+                    grid-column: 1;
+                    margin: auto 5%;
+                    //margin-top: 3em;
+                    height: 80%;
+                    width: auto;
+                    background-color: rgba(white, .1);
+                    border-left: .25em solid $_oldrose;
+                    border-right: .25em solid $_oldrose;
+                    p{
+                        margin: 0;
+                        padding: 12px;
+                        font-family: 'Inconsolata';
+                        color: $_eggshell;
+                    }
+                }
+                &-right{
+                    grid-row: 3;
+                    grid-column-start: 2;
+                    grid-column-end: span 3;
+                    margin: auto 5%;
+                    height: 80%;
+                    width: auto;
+                    background-color: rgba(white, .1);
+                    border-right: .25em solid $_oldrose;
+                    border-left: .25em solid $_oldrose;
+                    p{
+                        margin: 0;
+                        padding: 12px;
+                        font-family: 'Inconsolata';
+                        color: $_eggshell;
+                    }
+                }
+                p{
+                    margin: 0;
+                    padding: 12px;
+                    font-family: 'Inconsolata';
+                    color: $_eggshell;
+                }
+            }
+            .table-div{
+                grid-column-start: 1;
+                grid-column-end: span 2;
+                grid-row: 3;
+                width: auto;
+                height: 100%;
+                //background-color: lemonchiffon;
+                overflow:auto;                
+                table{
+                    color: $_eggshell;
+                    height: 50%;
+                    width: 100%;
+                    background-color: $_darkblue;
+                    border-collapse: collapse;
+                    tr{
+                        color: inherit;
+                        &:nth-child(even){
+                            background-color: $_darkblue;
+                        }
+                        &:nth-child(odd){
+                            background-color: $_darkest;
+                        }
+                    }
+                }
+            }
         }
     }
 }

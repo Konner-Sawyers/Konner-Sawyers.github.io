@@ -1,0 +1,15 @@
+@font-face{
+    font-family: 'Inconsolata';
+    src: url(Inconsolata/Inconsolata-VariableFont_wdth,wght.ttf);
+
+}
+
+@font-face{
+    font-family: 'Advent_Pro';
+    src: url(Advent_Pro/AdventPro-VariableFont_wdth,wght.ttf);
+}
+
+@font-face{
+    font-family: 'Advent_Pro_Italic';
+    src: url(Advent_Pro/AdventPro-Italic-VariableFont_wdth,wght.ttf);
+}

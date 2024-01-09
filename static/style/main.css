@@ -1,5 +1,10 @@
+@import '../fonts/fonts.css';
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: yellowgreen;
+  background-color: #CC7178;
   min-height: 150vh;
   margin: 0%;
   padding: 0%;
@@ -37,18 +42,20 @@ body .landing-div .landing-text {
   z-index: 1000;
 }
 body .landing-div .landing-text h1 {
+  font-family: "Advent_Pro";
+  font-weight: 800;
   text-align: center;
   background-color: rgba(17, 21, 23, 0.8);
   color: rgba(204, 113, 120, 0.6);
   width: 40%;
   height: 50%;
-  padding: 0;
-  padding-top: 50px;
+  padding: 0%;
   font-size: 60px;
   margin: 0;
-  margin-bottom: 26px;
 }
 body .landing-div .landing-text h2 {
+  font-family: "Inconsolata";
+  font-weight: 200;
   transition-duration: 0.6s;
   margin-top: 6px;
   font-size: 36px;
@@ -71,35 +78,59 @@ body .landing-div .landing-text i {
   font-stretch: 200px;
 }
 body .nav-bar {
-  background-color: #1a2124;
+  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: 40px;
+  height: 30px;
   position: sticky;
   margin: 0%;
   top: 0;
+  transition-duration: 0.3s;
+  color: #E4E3D3;
+}
+body .nav-bar:hover {
+  color: rgba(228, 227, 211, 0.6);
 }
 body .nav-bar a {
   display: inline-block;
   margin: 0%;
   height: 100%;
   width: 100px;
-  color: #E4E3D3;
+  color: inherit;
   padding: 0%;
 }
 body .nav-bar a.section-link {
+  text-transform: lowercase;
   float: left;
+  text-decoration: none;
+}
+body .nav-bar a.section-link:first-child {
+  border-left: none;
 }
 body .nav-bar a.outer-link {
+  text-transform: lowercase;
   float: right;
+  text-decoration: none;
+  text-align: center;
 }
 body .nav-bar a:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  color: #E4E3D3;
 }
 body .nav-bar a p {
+  font-family: "Inconsolata";
+  font-weight: 100;
   text-align: center;
   margin: 0%;
+  margin-top: 7px;
   height: 100%;
   width: 100%;
+}
+body .nav-bar a i {
+  padding-top: 7px;
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  margin-top: 7px;
+  text-align: center;
 }
 body .content-body {
   background-image: linear-gradient(#1a2124, #1a2124);
@@ -107,7 +138,92 @@ body .content-body {
   margin: 0%;
 }
 body .content-body section {
-  padding-top: 30px;
   min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
   width: 100%;
+  display: grid;
+  grid-template-rows: 3em 2em calc(90% - 3em);
+  grid-template-columns: 50% 25% 25%;
+}
+body .content-body section h1 {
+  grid-row: 2;
+  grid-column: 1;
+  margin: 0%;
+  margin-left: 2em;
+  font-family: "Inconsolata";
+  color: #E4E3D3;
+}
+body .content-body section .text-box {
+  grid-row: 3;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  margin: auto 2.5%;
+  height: 80%;
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 0.25em solid #CC7178;
+}
+body .content-body section .text-box-left {
+  grid-row: 3;
+  grid-column: 1;
+  margin: auto 5%;
+  height: 80%;
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 0.25em solid #CC7178;
+  border-right: 0.25em solid #CC7178;
+}
+body .content-body section .text-box-left p {
+  margin: 0;
+  padding: 12px;
+  font-family: "Inconsolata";
+  color: #E4E3D3;
+}
+body .content-body section .text-box-right {
+  grid-row: 3;
+  grid-column-start: 2;
+  grid-column-end: span 3;
+  margin: auto 5%;
+  height: 80%;
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-right: 0.25em solid #CC7178;
+  border-left: 0.25em solid #CC7178;
+}
+body .content-body section .text-box-right p {
+  margin: 0;
+  padding: 12px;
+  font-family: "Inconsolata";
+  color: #E4E3D3;
+}
+body .content-body section .text-box p {
+  margin: 0;
+  padding: 12px;
+  font-family: "Inconsolata";
+  color: #E4E3D3;
+}
+body .content-body section .table-div {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row: 3;
+  width: auto;
+  height: 100%;
+  overflow: auto;
+}
+body .content-body section .table-div table {
+  color: #E4E3D3;
+  height: 50%;
+  width: 100%;
+  background-color: #1A2124;
+  border-collapse: collapse;
+}
+body .content-body section .table-div table tr {
+  color: inherit;
+}
+body .content-body section .table-div table tr:nth-child(even) {
+  background-color: #1A2124;
+}
+body .content-body section .table-div table tr:nth-child(odd) {
+  background-color: #111517;
 }/*# sourceMappingURL=main.css.map */
