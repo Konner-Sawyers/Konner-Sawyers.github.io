@@ -158,21 +158,24 @@ body .content-body section .text-box {
   grid-row: 3;
   grid-column-start: 1;
   grid-column-end: span 3;
-  margin: auto 2.5%;
+  margin: auto;
   height: 80%;
-  width: auto;
+  width: 70%;
   background-color: rgba(255, 255, 255, 0.1);
   border-left: 0.25em solid #CC7178;
 }
 body .content-body section .text-box-left {
   grid-row: 3;
   grid-column: 1;
-  margin: auto 5%;
+  margin: auto;
   height: 80%;
-  width: auto;
+  width: 80%;
   background-color: rgba(255, 255, 255, 0.1);
   border-left: 0.25em solid #CC7178;
   border-right: 0.25em solid #CC7178;
+}
+body .content-body section .text-box-left h1 {
+  margin-top: 20px;
 }
 body .content-body section .text-box-left p {
   margin: 0;
@@ -184,12 +187,15 @@ body .content-body section .text-box-right {
   grid-row: 3;
   grid-column-start: 2;
   grid-column-end: span 3;
-  margin: auto 5%;
+  margin: auto;
   height: 80%;
-  width: auto;
+  width: 80%;
   background-color: rgba(255, 255, 255, 0.1);
   border-right: 0.25em solid #CC7178;
   border-left: 0.25em solid #CC7178;
+}
+body .content-body section .text-box-right h1 {
+  margin-top: 20px;
 }
 body .content-body section .text-box-right p {
   margin: 0;
@@ -203,27 +209,102 @@ body .content-body section .text-box p {
   font-family: "Inconsolata";
   color: #E4E3D3;
 }
+body .content-body section .emblems-div {
+  grid-column: 3;
+  grid-row: 3;
+  height: 80%;
+  width: 80%;
+  margin: auto;
+}
+body .content-body section .emblems-div img {
+  width: auto;
+  display: block;
+  height: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .content-body section .emblems-div p {
+  margin: 0;
+  padding: 12px;
+  font-size: 12px;
+  font-family: "Inconsolata";
+  margin: auto;
+  color: #E4E3D3;
+  text-align: center;
+}
 body .content-body section .table-div {
   grid-column-start: 1;
   grid-column-end: span 2;
   grid-row: 3;
-  width: auto;
-  height: 100%;
+  width: 80%;
+  height: 95%;
   overflow: auto;
+  margin: auto;
 }
 body .content-body section .table-div table {
   color: #E4E3D3;
-  height: 50%;
+  height: 100%;
   width: 100%;
   background-color: #1A2124;
   border-collapse: collapse;
 }
 body .content-body section .table-div table tr {
   color: inherit;
+  height: auto;
+  width: auto;
 }
 body .content-body section .table-div table tr:nth-child(even) {
   background-color: #1A2124;
 }
 body .content-body section .table-div table tr:nth-child(odd) {
   background-color: #111517;
+}
+body .content-body section .table-div table tr td {
+  width: 100%;
+  padding-right: 1em;
+}
+body .content-body section .table-div table tr td div {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+body .content-body section .table-div table tr td div .left {
+  grid-column: 1;
+  width: auto;
+  height: 100%;
+  grid-template-rows: 35% 65%;
+  margin: 0;
+}
+body .content-body section .table-div table tr td div .left p {
+  grid-row: 2;
+  width: 150%;
+  margin-left: 20%;
+  padding-right: 15%;
+  margin-top: 0;
+  overflow: auto;
+}
+body .content-body section .table-div table tr td div .left h1 {
+  width: 150%;
+  grid-row: 1;
+  margin-top: 15%;
+  margin-left: 10%;
+  text-align: center;
+}
+body .content-body section .table-div table tr td div .right {
+  grid-column: 2;
+  width: 100%;
+  min-height: 520px;
+}
+body .content-body section .table-div table tr td div .right img {
+  width: 200%;
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .content-body section .table-div table tr td div .right iframe {
+  margin: auto;
+  height: 100%;
+  width: 200%;
 }/*# sourceMappingURL=main.css.map */

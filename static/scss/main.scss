@@ -173,21 +173,25 @@ body{
                 grid-row: 3;
                 grid-column-start: 1;
                 grid-column-end: span 3;
-                margin: auto 2.5%;
+                margin: auto;
                 height: 80%;
-                width: auto;
+                width: 70%;
                 background-color: rgba(white, .1);
                 border-left: .25em solid $_oldrose;
                 &-left{
                     grid-row: 3;
                     grid-column: 1;
-                    margin: auto 5%;
-                    //margin-top: 3em;
+                    margin: auto;
                     height: 80%;
-                    width: auto;
+                    width: 80%;
                     background-color: rgba(white, .1);
                     border-left: .25em solid $_oldrose;
                     border-right: .25em solid $_oldrose;
+
+                    h1{
+                        margin-top: 20px;
+                    }
+
                     p{
                         margin: 0;
                         padding: 12px;
@@ -199,12 +203,17 @@ body{
                     grid-row: 3;
                     grid-column-start: 2;
                     grid-column-end: span 3;
-                    margin: auto 5%;
+                    margin: auto;
                     height: 80%;
-                    width: auto;
+                    width: 80%;
                     background-color: rgba(white, .1);
                     border-right: .25em solid $_oldrose;
                     border-left: .25em solid $_oldrose;
+                    
+                    h1{
+                        margin-top: 20px;
+                    }
+                    
                     p{
                         margin: 0;
                         padding: 12px;
@@ -219,27 +228,109 @@ body{
                     color: $_eggshell;
                 }
             }
+            .emblems-div{
+                grid-column: 3;
+                grid-row: 3;
+                height: 80%;
+                width: 80%;
+                margin: auto;
+                img{
+                    width: auto;
+                    display: block;
+                    height: 35%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                p{
+                    margin: 0;
+                    padding: 12px;
+                    font-size: 12px;
+                    font-family: 'Inconsolata';
+                    margin: auto;
+                    color: $_eggshell;
+                    text-align: center;
+                }
+            }
             .table-div{
                 grid-column-start: 1;
                 grid-column-end: span 2;
                 grid-row: 3;
-                width: auto;
-                height: 100%;
-                //background-color: lemonchiffon;
-                overflow:auto;                
+                width: 80%;
+                height: 95%;
+                overflow:auto;       
+                margin: auto;         
                 table{
                     color: $_eggshell;
-                    height: 50%;
+                    height: 100%;
                     width: 100%;
                     background-color: $_darkblue;
                     border-collapse: collapse;
                     tr{
                         color: inherit;
+                        height: auto;
+                        width: auto;
                         &:nth-child(even){
                             background-color: $_darkblue;
                         }
                         &:nth-child(odd){
                             background-color: $_darkest;
+                        }
+                        td{
+                            width: 100%;
+                            padding-right: 1em;
+
+                            div{
+                                width: 100%;
+                                height: 100%;
+                                display: grid;
+                                grid-template-columns: 50% 50%;
+                                
+                                .left{
+                                    grid-column: 1;
+                                    width: auto;
+                                    height: 100%;
+                                    //background-color: green;
+                                    grid-template-rows: 35% 65%;
+                                    margin: 0;
+
+                                    p{
+                                        grid-row: 2;
+                                        width: 150%;
+                                        margin-left: 20%;
+                                        padding-right: 15%;
+                                        margin-top: 0;
+                                        overflow: auto;
+                                    }
+
+                                    h1{
+                                        width: 150%;
+                                        grid-row: 1;
+                                        margin-top: 15%;
+                                        margin-left: 10%;
+                                        text-align: center;
+                                    }
+
+                                }
+
+                                .right{
+                                    grid-column: 2;
+                                    width: 100%;
+                                    //height: 100%;
+                                    min-height: 520px;
+                                    img{
+                                        width: 200%;
+                                        display: block;
+                                        height: auto;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                    }
+                                    iframe{
+                                        margin: auto;
+                                        height: 100%;
+                                        width: 200%;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
