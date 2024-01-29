@@ -223,6 +223,10 @@ body .content-body section .emblems-div img {
   margin-left: auto;
   margin-right: auto;
 }
+body .content-body section .emblems-div img:hover {
+  transition-duration: 0.2s;
+  transform: scale(1.05);
+}
 body .content-body section .emblems-div p {
   margin: 0;
   padding: 12px;
@@ -276,6 +280,13 @@ body .content-body section .table-div table tr td div .left {
   grid-template-rows: 35% 65%;
   margin: 0;
 }
+body .content-body section .table-div table tr td div .left a {
+  font-family: "Inconsolata";
+  color: #E4E3D3;
+}
+body .content-body section .table-div table tr td div .left a:hover {
+  color: #CC7178;
+}
 body .content-body section .table-div table tr td div .left p {
   grid-row: 2;
   width: 150%;
@@ -296,12 +307,24 @@ body .content-body section .table-div table tr td div .right {
   width: 100%;
   min-height: 520px;
 }
+body .content-body section .table-div table tr td div .right a {
+  margin: auto;
+}
+body .content-body section .table-div table tr td div .right a img {
+  width: 200%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
 body .content-body section .table-div table tr td div .right img {
   width: 200%;
   display: block;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+}
+body .content-body section .table-div table tr td div .right img:hover {
+  transition-duration: 0.2s;
+  transform: scale(1.05);
 }
 body .content-body section .table-div table tr td div .right iframe {
   margin: auto;

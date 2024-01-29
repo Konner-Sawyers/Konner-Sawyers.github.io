@@ -240,6 +240,10 @@ body{
                     height: 35%;
                     margin-left: auto;
                     margin-right: auto;
+                    &:hover{
+                        transition-duration: .2s;
+                        transform: scale(1.05);
+                    }
                 }
                 p{
                     margin: 0;
@@ -293,6 +297,18 @@ body{
                                     grid-template-rows: 35% 65%;
                                     margin: 0;
 
+                                    a{
+                                        //margin: 0;
+                                        //font-size: 12px;
+                                        font-family: 'Inconsolata';
+                                        //margin: auto;
+                                        color: $_eggshell;
+                                        //text-align: center;
+                                        &:hover{
+                                            color: $_oldrose;
+                                        }
+                                    }
+
                                     p{
                                         grid-row: 2;
                                         width: 150%;
@@ -317,13 +333,26 @@ body{
                                     width: 100%;
                                     //height: 100%;
                                     min-height: 520px;
+                                    a{
+                                        margin: auto;
+                                        img{
+                                            width: 200%;
+                                            display: block;
+                                            height: auto;
+                                            margin: auto;
+                                        }
+                                    }
                                     img{
                                         width: 200%;
                                         display: block;
                                         height: auto;
-                                        margin-left: auto;
-                                        margin-right: auto;
+                                        margin: auto;
+                                        &:hover{
+                                            transition-duration: .2s;
+                                            transform: scale(1.05);
+                                        }
                                     }
+
                                     iframe{
                                         margin: auto;
                                         height: 100%;
