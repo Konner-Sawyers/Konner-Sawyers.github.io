@@ -1,0 +1,351 @@
+@import '../fonts/fonts.css';
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #CC7178;
+  min-height: 150vh;
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+}
+body .landing-div {
+  pointer-events: auto;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+body .landing-div canvas {
+  position: absolute;
+  pointer-events: auto;
+  background: linear-gradient(115deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(115deg, #cc7178, #cc7178);
+  width: 100%;
+  height: 100vh;
+  margin: 0%;
+  padding: 0%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+body .landing-div .landing-text {
+  pointer-events: inherit;
+  position: absolute;
+  width: 70%;
+  height: 50vh;
+  margin: 0%;
+  padding: 0%;
+  top: 20%;
+  left: 10%;
+  z-index: 1000;
+}
+body .landing-div .landing-text h1 {
+  font-family: "Advent_Pro";
+  font-weight: 800;
+  text-align: center;
+  background-color: rgba(17, 21, 23, 0.8);
+  color: rgba(204, 113, 120, 0.6);
+  min-width: 320px;
+  width: 40%;
+  height: 50%;
+  padding: 0%;
+  font-size: 60px;
+  margin: 0;
+}
+body .landing-div .landing-text h2 {
+  font-family: "Inconsolata";
+  font-weight: 200;
+  transition-duration: 0.6s;
+  margin-top: 6px;
+  font-size: 36px;
+  border-left: 1px solid black;
+  padding-left: 1em;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-right: 1em;
+}
+body .landing-div .landing-text h2:hover {
+  color: rgba(204, 113, 120, 0.6);
+  background-color: rgba(17, 21, 23, 0.8);
+}
+body .landing-div .landing-text i {
+  position: absolute;
+  bottom: -10%;
+  right: 10%;
+  align-self: center;
+  font-size: 100px;
+  font-stretch: 200px;
+}
+body .nav-bar {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 30px;
+  position: sticky;
+  margin: 0%;
+  top: 0;
+  transition-duration: 0.3s;
+  color: #E4E3D3;
+}
+body .nav-bar:hover {
+  color: rgba(228, 227, 211, 0.6);
+}
+body .nav-bar a {
+  display: inline-block;
+  margin: 0%;
+  height: 100%;
+  width: 100px;
+  color: inherit;
+  padding: 0%;
+}
+body .nav-bar a.section-link {
+  text-transform: lowercase;
+  float: left;
+  text-decoration: none;
+}
+body .nav-bar a.section-link:first-child {
+  border-left: none;
+}
+body .nav-bar a.outer-link {
+  text-transform: lowercase;
+  float: right;
+  text-decoration: none;
+  text-align: center;
+}
+body .nav-bar a:hover {
+  color: #E4E3D3;
+}
+body .nav-bar a p {
+  font-family: "Inconsolata";
+  font-weight: 100;
+  text-align: center;
+  margin: 0%;
+  margin-top: 7px;
+  height: 100%;
+  width: 100%;
+}
+body .nav-bar a i {
+  padding-top: 7px;
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  margin-top: 7px;
+  text-align: center;
+}
+body .content-body {
+  background-image: linear-gradient(#1a2124, #1a2124);
+  width: 100%;
+  margin: 0%;
+}
+body .content-body section {
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 3em 2em calc(90% - 3em);
+  grid-template-columns: 50% 25% 25%;
+}
+body .content-body section h1 {
+  grid-row: 2;
+  grid-column: 1;
+  margin: 0%;
+  margin-left: 2em;
+  font-family: "Inconsolata";
+  color: #E4E3D3;
+}
+body .content-body section .text-box {
+  grid-row: 3;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  margin: auto;
+  height: 80%;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 0.25em solid #CC7178;
+}
+body .content-body section .text-box-about {
+  grid-row: 3;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  margin: auto;
+  height: 80%;
+  width: 30%;
+  min-width: 480px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 0.25em solid #CC7178;
+}
+body .content-body section .text-box-about p {
+  margin: 0;
+  padding: 12px;
+  font-family: "Inconsolata";
+  color: #E4E3D3;
+}
+body .content-body section .text-box-left {
+  grid-row: 3;
+  grid-column: 1;
+  margin: auto;
+  height: 80%;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 0.25em solid #CC7178;
+  border-right: 0.25em solid #CC7178;
+}
+body .content-body section .text-box-left h1 {
+  margin-top: 20px;
+}
+body .content-body section .text-box-left p {
+  margin: 0;
+  padding: 12px;
+  font-family: "Inconsolata";
+  color: #E4E3D3;
+}
+body .content-body section .text-box-right {
+  grid-row: 3;
+  grid-column-start: 2;
+  grid-column-end: span 3;
+  margin: auto;
+  height: 80%;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-right: 0.25em solid #CC7178;
+  border-left: 0.25em solid #CC7178;
+}
+body .content-body section .text-box-right h1 {
+  margin-top: 20px;
+}
+body .content-body section .text-box-right p {
+  margin: 0;
+  padding: 12px;
+  font-family: "Inconsolata";
+  color: #E4E3D3;
+}
+body .content-body section .text-box p {
+  margin: 0;
+  padding: 12px;
+  font-family: "Inconsolata";
+  color: #E4E3D3;
+}
+body .content-body section .emblems-div {
+  grid-column: 3;
+  grid-row: 3;
+  height: 80%;
+  width: 80%;
+  margin: auto;
+}
+body .content-body section .emblems-div img {
+  width: auto;
+  display: block;
+  height: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .content-body section .emblems-div img:hover {
+  transition-duration: 0.2s;
+  transform: scale(1.05);
+}
+body .content-body section .emblems-div p {
+  margin: 0;
+  padding: 12px;
+  font-size: 12px;
+  font-family: "Inconsolata";
+  margin: auto;
+  color: #E4E3D3;
+  text-align: center;
+}
+body .content-body section .table-div {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row: 3;
+  width: 80%;
+  height: 95%;
+  overflow: auto;
+  margin: auto;
+}
+body .content-body section .table-div table {
+  color: #E4E3D3;
+  height: 100%;
+  width: 100%;
+  background-color: #1A2124;
+  border-collapse: collapse;
+}
+body .content-body section .table-div table tr {
+  color: inherit;
+  height: auto;
+  width: auto;
+}
+body .content-body section .table-div table tr:nth-child(even) {
+  background-color: #1A2124;
+}
+body .content-body section .table-div table tr:nth-child(odd) {
+  background-color: #111517;
+}
+body .content-body section .table-div table tr td {
+  width: 100%;
+  padding-right: 1em;
+}
+body .content-body section .table-div table tr td div {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+body .content-body section .table-div table tr td div .left {
+  grid-column: 1;
+  width: auto;
+  height: 100%;
+  grid-template-rows: 35% 65%;
+  margin: 0;
+}
+body .content-body section .table-div table tr td div .left a {
+  font-family: "Inconsolata";
+  color: #E4E3D3;
+}
+body .content-body section .table-div table tr td div .left a:hover {
+  color: #CC7178;
+}
+body .content-body section .table-div table tr td div .left p {
+  grid-row: 2;
+  width: 150%;
+  margin-left: 20%;
+  padding-right: 15%;
+  margin-top: 0;
+  overflow: auto;
+}
+body .content-body section .table-div table tr td div .left h1 {
+  width: 150%;
+  grid-row: 1;
+  margin-top: 15%;
+  margin-left: 10%;
+  text-align: center;
+}
+body .content-body section .table-div table tr td div .right {
+  grid-column: 2;
+  width: 100%;
+  min-height: 520px;
+}
+body .content-body section .table-div table tr td div .right a {
+  margin: auto;
+}
+body .content-body section .table-div table tr td div .right a img {
+  width: 200%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
+body .content-body section .table-div table tr td div .right img {
+  width: 200%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
+body .content-body section .table-div table tr td div .right img:hover {
+  transition-duration: 0.2s;
+  transform: scale(1.05);
+}
+body .content-body section .table-div table tr td div .right iframe {
+  margin: auto;
+  height: 100%;
+  width: 200%;
+}/*# sourceMappingURL=main.css.map */
