@@ -2,6 +2,12 @@ var landingDIV = document.getElementById('landing-div');
 var canvas = document.getElementById('landing-canvas');
 var ctx = canvas.getContext('2d');
 
+
+function contact_function(){
+    alert("Email me at konnersawyersofficial@gmail.com");
+}
+
+
 const pointArray = [];
 
 var i = 0;

@@ -58,6 +58,7 @@ body{
                 text-align: center;
                 background-color: (rgba(#111517, .8));
                 color: (rgba($_oldrose,.6));
+                min-width: 320px;
                 width: 40%;
                 height: 50%;
                 padding: 0%;
@@ -178,6 +179,23 @@ body{
                 width: 70%;
                 background-color: rgba(white, .1);
                 border-left: .25em solid $_oldrose;
+                &-about{
+                    grid-row: 3;
+                    grid-column-start: 1;
+                    grid-column-end: span 3;
+                    margin: auto;
+                    height: 80%;
+                    width: 30%;
+                    min-width: 480px;
+                    background-color: rgba(white, .1);
+                    border-left: .25em solid $_oldrose;
+                    p{
+                        margin: 0;
+                        padding: 12px;
+                        font-family: 'Inconsolata';
+                        color: $_eggshell;
+                    }
+                }
                 &-left{
                     grid-row: 3;
                     grid-column: 1;
