@@ -62,7 +62,6 @@ body .landing-div .landing-text h2 {
   font-size: 36px;
   border-left: 1px solid black;
   padding-left: 1em;
-  width: -moz-fit-content;
   width: fit-content;
   padding-right: 1em;
 }
@@ -162,8 +161,6 @@ body .content-body section .text-box {
   margin: auto;
   height: 80%;
   width: 70%;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-left: 0.25em solid #CC7178;
 }
 body .content-body section .text-box-about {
   grid-row: 3;
@@ -173,11 +170,11 @@ body .content-body section .text-box-about {
   height: 80%;
   width: 30%;
   min-width: 480px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-left: 0.25em solid #CC7178;
+  background-color: #111517;
+  border-radius: 35%;
 }
 body .content-body section .text-box-about p {
-  margin: 0;
+  margin: 25% 0;
   padding: 12px;
   font-family: "Inconsolata";
   color: #E4E3D3;
@@ -188,9 +185,39 @@ body .content-body section .text-box-left {
   margin: auto;
   height: 80%;
   width: 80%;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-left: 0.25em solid #CC7178;
-  border-right: 0.25em solid #CC7178;
+  display: grid;
+  grid-template-columns: 28.5714285714% 28.5714285714% 28.5714285714%;
+  grid-gap: 20px 2em;
+  grid-template-rows: 12em;
+}
+body .content-body section .text-box-left div h1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 25% auto;
+  padding: 0;
+  width: 90%;
+  height: 50%;
+}
+body .content-body section .text-box-left div img {
+  padding: 0% 5%;
+  width: 90%;
+  overflow: visible;
+  height: 90%;
+  object-fit: contain;
+  border-radius: 15% 30%;
+  background-color: #111517;
+  background-size: 100% 12em;
+  margin: auto;
+}
+body .content-body section .text-box-left div p {
+  margin: auto;
+  padding: 0%;
+  text-align: center;
+  width: 100%;
+  font-family: "Inconsolata";
+  color: #E4E3D3;
+  font-size: 1em;
 }
 body .content-body section .text-box-left h1 {
   margin-top: 20px;
@@ -208,9 +235,39 @@ body .content-body section .text-box-right {
   margin: auto;
   height: 80%;
   width: 80%;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-right: 0.25em solid #CC7178;
-  border-left: 0.25em solid #CC7178;
+  display: grid;
+  grid-template-columns: 28.5714285714% 28.5714285714% 28.5714285714%;
+  grid-gap: 20px 2em;
+  grid-template-rows: 12em;
+}
+body .content-body section .text-box-right div h1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 25% auto;
+  padding: 0;
+  width: 90%;
+  height: 50%;
+}
+body .content-body section .text-box-right div img {
+  padding: 0% 5%;
+  width: 90%;
+  overflow: visible;
+  height: 90%;
+  object-fit: contain;
+  border-radius: 15% 30%;
+  background-color: #111517;
+  background-size: 100% 12em;
+  margin: auto;
+}
+body .content-body section .text-box-right div p {
+  margin: auto;
+  padding: 0%;
+  text-align: center;
+  width: 100%;
+  font-family: "Inconsolata";
+  color: #E4E3D3;
+  font-size: 1em;
 }
 body .content-body section .text-box-right h1 {
   margin-top: 20px;

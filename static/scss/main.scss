@@ -177,8 +177,9 @@ body{
                 margin: auto;
                 height: 80%;
                 width: 70%;
-                background-color: rgba(white, .1);
-                border-left: .25em solid $_oldrose;
+                //background-color: rgba(white, .1);
+                //border-left: .25em solid $_oldrose;
+
                 &-about{
                     grid-row: 3;
                     grid-column-start: 1;
@@ -187,10 +188,10 @@ body{
                     height: 80%;
                     width: 30%;
                     min-width: 480px;
-                    background-color: rgba(white, .1);
-                    border-left: .25em solid $_oldrose;
+                    background-color: #111517;
+                    border-radius: 35%;
                     p{
-                        margin: 0;
+                        margin: 25% 0;
                         padding: 12px;
                         font-family: 'Inconsolata';
                         color: $_eggshell;
@@ -202,9 +203,52 @@ body{
                     margin: auto;
                     height: 80%;
                     width: 80%;
-                    background-color: rgba(white, .1);
-                    border-left: .25em solid $_oldrose;
-                    border-right: .25em solid $_oldrose;
+                    //background-color: rgba(white, .1);
+                    //border-left: .25em solid $_oldrose;
+                    //border-right: .25em solid $_eggshell;
+                    display: grid;
+                    grid-template-columns: calc(100%/3.5) calc(100%/3.5) calc(100%/3.5);
+                    grid-gap: 20px 2em;
+                    grid-template-rows: 12em;
+                    
+                    div{
+                        //background-color: yellow;
+                        h1{
+                            //text-align: left;
+                            //background-color: purple;
+                            //border-style: dotted;
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                            margin: 25% auto;
+                            padding: 0;
+                            width: 90%;
+                            height: 50%;
+                        }
+                        img{
+                            padding: 0% 5%;
+                            width: 90%;
+                            overflow: visible;
+                            height: 90%;
+                            object-fit: contain;
+                            border-radius: 15% 30%;
+                            background-color: $_darkest;
+                            background-size: 100% 12em;
+                            margin: auto;
+                            //border-color: red;
+                            //border-style: dotted;
+                        }
+                        p{
+                            //background-color: lightgreen;
+                            margin: auto;
+                            padding: 0%;
+                            text-align: center;
+                            width: 100%;
+                            font-family: 'Inconsolata';
+                            color: $_eggshell;
+                            font-size: 1em;
+                        }
+                    }
 
                     h1{
                         margin-top: 20px;
@@ -224,9 +268,52 @@ body{
                     margin: auto;
                     height: 80%;
                     width: 80%;
-                    background-color: rgba(white, .1);
-                    border-right: .25em solid $_oldrose;
-                    border-left: .25em solid $_oldrose;
+                    //background-color: rgba(white, .1);
+                    //border-right: .25em solid $_oldrose;
+                    //border-left: .25em solid $_oldrose;
+                    display: grid;
+                    grid-template-columns: calc(100%/3.5) calc(100%/3.5) calc(100%/3.5);
+                    grid-gap: 20px 2em;
+                    grid-template-rows: 12em;
+                    
+                    div{
+                        //background-color: yellow;
+                        h1{
+                            //text-align: left;
+                            //background-color: purple;
+                            //border-style: dotted;
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                            margin: 25% auto;
+                            padding: 0;
+                            width: 90%;
+                            height: 50%;
+                        }
+                        img{
+                            padding: 0% 5%;
+                            width: 90%;
+                            overflow: visible;
+                            height: 90%;
+                            object-fit: contain;
+                            border-radius: 15% 30%;
+                            background-color: $_darkest;
+                            background-size: 100% 12em;
+                            margin: auto;
+                            //border-color: red;
+                            //border-style: dotted;
+                        }
+                        p{
+                            //background-color: lightgreen;
+                            margin: auto;
+                            padding: 0%;
+                            text-align: center;
+                            width: 100%;
+                            font-family: 'Inconsolata';
+                            color: $_eggshell;
+                            font-size: 1em;
+                        }
+                    }
                     
                     h1{
                         margin-top: 20px;
