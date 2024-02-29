@@ -10,6 +10,7 @@ $_oldrose : #CC7178;
 @import '../fonts/fonts.css';
 
 html{
+    background-color: $_darkblue;
     scroll-behavior: smooth;
 }
 
@@ -19,6 +20,7 @@ body{
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
+    position: relative;
 
 
     .landing-div{
@@ -155,13 +157,16 @@ body{
         margin: 0%;
         section{
             min-height: 100vh;
-            max-height: 100vh;
-            height: 100vh;
+            //max-height: 100vh;
+            height: auto;
+            object-fit: contain;
             width: 100%;
             display: grid;
             $row_3: calc(90% - 3em);
             grid-template-rows: 3em 2em $row_3;
             grid-template-columns: 50% 25% 25%;
+            padding-top: 5vh;
+            padding-bottom: 5vh;
             h1{
                 grid-row: 2;
                 grid-column: 1;
@@ -185,14 +190,17 @@ body{
                     grid-column-start: 1;
                     grid-column-end: span 3;
                     margin: auto;
-                    height: 80%;
-                    width: 30%;
-                    min-width: 480px;
-                    background-color: #111517;
+                    height: auto;
+                    width: auto;
+                    //min-width: 480px;
+                    //background-color: #111517;
                     border-radius: 35%;
                     p{
+                        max-width: 35em;
+                        background-color: #111517;
+                        border-radius: 25%;
                         margin: 25% 0;
-                        padding: 12px;
+                        padding: 4em;
                         font-family: 'Inconsolata';
                         color: $_eggshell;
                     }
@@ -342,7 +350,7 @@ body{
                 img{
                     width: auto;
                     display: block;
-                    height: 35%;
+                    height: auto;
                     margin-left: auto;
                     margin-right: auto;
                     &:hover{
@@ -365,7 +373,7 @@ body{
                 grid-column-end: span 2;
                 grid-row: 3;
                 width: 80%;
-                height: 95%;
+                height: 100vh;
                 overflow:auto;       
                 margin: auto;         
                 table{

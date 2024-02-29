@@ -1,5 +1,6 @@
 @import '../fonts/fonts.css';
 html {
+  background-color: #1A2124;
   scroll-behavior: smooth;
 }
 
@@ -9,6 +10,7 @@ body {
   margin: 0%;
   padding: 0%;
   overflow-x: hidden;
+  position: relative;
 }
 body .landing-div {
   pointer-events: auto;
@@ -139,12 +141,14 @@ body .content-body {
 }
 body .content-body section {
   min-height: 100vh;
-  max-height: 100vh;
-  height: 100vh;
+  height: auto;
+  object-fit: contain;
   width: 100%;
   display: grid;
   grid-template-rows: 3em 2em calc(90% - 3em);
   grid-template-columns: 50% 25% 25%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 body .content-body section h1 {
   grid-row: 2;
@@ -167,15 +171,16 @@ body .content-body section .text-box-about {
   grid-column-start: 1;
   grid-column-end: span 3;
   margin: auto;
-  height: 80%;
-  width: 30%;
-  min-width: 480px;
-  background-color: #111517;
+  height: auto;
+  width: auto;
   border-radius: 35%;
 }
 body .content-body section .text-box-about p {
+  max-width: 35em;
+  background-color: #111517;
+  border-radius: 25%;
   margin: 25% 0;
-  padding: 12px;
+  padding: 4em;
   font-family: "Inconsolata";
   color: #E4E3D3;
 }
@@ -294,7 +299,7 @@ body .content-body section .emblems-div {
 body .content-body section .emblems-div img {
   width: auto;
   display: block;
-  height: 35%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
 }
@@ -316,7 +321,7 @@ body .content-body section .table-div {
   grid-column-end: span 2;
   grid-row: 3;
   width: 80%;
-  height: 95%;
+  height: 100vh;
   overflow: auto;
   margin: auto;
 }
