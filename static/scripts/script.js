@@ -2,6 +2,7 @@ var landingDIV = document.getElementById('landing-div');
 var canvas = document.getElementById('landing-canvas');
 var ctx = canvas.getContext('2d');
 
+alert("This portfolio site and link are out dated. You will be redirected to konnersawyers.ddns.net.")
 
 function contact_function(){
     alert("Email me at konnersawyersofficial@gmail.com");
